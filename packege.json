@@ -1,0 +1,15 @@
+{
+    "name": "backend",
+    "version":"1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts":{
+            "test": "echo \"Error no test specified\" && exit l",
+            "start": "node index.js",
+            "dev":"nodemon index.js"
+    },
+    "author": "Esteban Rivas",
+    "License": "ISC",
+    "dependencies": {},
+    "devDependencies": {}
+}
