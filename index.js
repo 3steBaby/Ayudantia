@@ -1,7 +1,7 @@
 const express = require ('express'); //
-const mongoose = require ('mongoose'); //Bdd
-const cors = require ('cors'); //Seguridad
-require('dotenv').config();
+// const mongoose = require ('mongoose'); //Bdd
+// const cors = require ('cors'); //Seguridad
+// require('dotenv').config();
 
 const app = express();
 
