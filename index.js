@@ -10,3 +10,16 @@ app.listen(process.env.PORT, () => {
         console.log('Server started for ' + i);
     }
 });
+
+mongoose.set('useFindAndModify', false);
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useCreateIndex', true);
+mongoose.set('useUnifiedTopology', true);
+//Estas 4 lineas de mongoose son para conectar con la base de datos
+
+mongoose.connect(process.env.DB, (err) => {
+    if (err) {
+        return console.log("Error al conectar a la base de datos: ", err)
+    }
+    return console.log("Conectado a la base de datos: ");
+})
