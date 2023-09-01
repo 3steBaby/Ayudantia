@@ -21,5 +21,5 @@ mongoose.connect(process.env.DB, (err) => {
     if (err) {
         return console.log("Error al conectar a la base de datos: ", err)
     }
-    return console.log("Conectado a la base de datos: ");
+    return console.log("Conectado a la base de datos");
 })
