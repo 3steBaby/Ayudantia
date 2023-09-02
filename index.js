@@ -4,6 +4,12 @@ const cors = require ('cors'); //Seguridad
 require('dotenv').config();
 
 const app = express();
+const productRoutes = require('./routes/productRoutes');
+
+app.use(cors())
+app.use(express.json());
+app.options('*', cors());
+app.use('/api', productRoutes);
 
 app.listen(process.env.PORT, () => {
     for (let i = 0; i < 10 ; i++) {

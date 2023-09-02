@@ -16,6 +16,10 @@
         "category":{
             "type": "Schema.ObjectID",
             "ref": "Category"
+        },
+        "status":{
+            "type": "Schema.ObjectID",
+            "ref": "Status"
         }
     },
     "category":{
